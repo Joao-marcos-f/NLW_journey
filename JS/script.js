@@ -15,8 +15,8 @@ const formatador = (data) => {
   
   // object {}
   const atividade = {
-    nome: "Almoço",
-    data: new Date("2024-07-08 10:00"),
+    nome: "Almoço com Familia",
+    data: new Date("2024-07-08 12:00"),
     finalizada: true
   }
   
@@ -24,13 +24,13 @@ const formatador = (data) => {
   let atividades = [
     atividade,
     {
-      nome: 'Academia em grupo',
-      data: new Date("2024-07-09 12:00"),
+      nome: 'Visitar museu',
+      data: new Date("2024-07-09 15:00"),
       finalizada: false
     },
     {
-      nome: 'Gamming session',
-      data: new Date("2024-07-09 16:00"),
+      nome: 'Jantar no Bistrô',
+      data: new Date("2024-07-09 19:00"),
       finalizada: true
     },
   ]
@@ -131,11 +131,11 @@ const formatador = (data) => {
   
   const criarDiasSelecao = () => {
     const dias = [
-      '2024-02-28',
-      '2024-02-29',
-      '2024-03-01',
-      '2024-03-02',
-      '2024-03-03',
+      '2024-07-09',
+      '2024-07-10',
+      '2024-07-11',
+      '2024-07-12',
+      '2024-07-13',
     ]
   
     let diasSelecao = ''
@@ -162,7 +162,7 @@ const formatador = (data) => {
   const criarHorasSelecao = () => {
     let horasDisponiveis = ''
   
-    for (let i = 6; i < 23; i++) {
+    for (let i = 1; i < 24; i++) {
       const hora = String(i).padStart(2, '0')
       horasDisponiveis += `
       <option value="${hora}:00">${hora}:00</option>`
